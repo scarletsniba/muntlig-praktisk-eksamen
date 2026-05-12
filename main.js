@@ -19,3 +19,31 @@ function showTab(tabName) {
 }
 
 showTab("forside");
+
+class Statistic {
+    constructor(label, value, unit) {
+        this.label = label;
+        this.value = value;
+        this.unit = unit;   // måleenhet som minutter / prosent
+    }
+}
+
+const screenTimeData = [];
+
+fetch("figur-1-gjennomsnittlig.csv")
+    .then(response => response.text())
+    .then(text => {
+        const statlines = text.split("\n");
+
+        for (let i = 1; i < statlines.length; i++) {
+            const parts = statlines[i].split(";");
+
+            const stat = new Statistic(parts[0], parts[1], "minutter");
+            screenTimeData.push(stat);
+        }
+
+        console.log(screenTimeData);
+
+    });
+    // console.log(statlines)
+
