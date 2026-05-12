@@ -1,3 +1,58 @@
 .hidden {
     display: none;
+} * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} body {
+    background-color: #FFFDF1;
+    color: #2C1810;
+    font-family: "Segoe UI", sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+} h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+} h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+} p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+} nav {
+    display: flex;
+    height: 90px;
+    padding: 50px;
+    align-items: center;
+} hr {
+    border: none;
+    border-top: 2px solid #D4B5A0;
+    margin:  5px 35px;
+} button {
+    border: 2px solid #EE9B77;
+    background-color: #FFCE99;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+} button:hover {
+    background-color: #F2B297;
+} button.active {
+    background-color: #D4745A;
+} #fakta-bokser {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 20px;
+    border-radius: 20px;
+} #fakta-bokser > div {
+    background-color: #FFCE99;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+} #fakta-bokser p {
+    font-size: 1.2rem;
+    color: #5C3A28;
 }

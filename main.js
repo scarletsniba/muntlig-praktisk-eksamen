@@ -13,9 +13,13 @@ tabs.forEach(function(tab) {
 function showTab(tabName) {
     sections.forEach(function(section) {
         section.classList.add("hidden");
-    })
-
+    });
     document.getElementById(tabName).classList.remove("hidden");
+
+    tabs.forEach(function(tab) {
+        tab.classList.remove("active");
+    });
+    document.querySelector('[data-tab="' + tabName +'"]').classList.add("active");
 }
 
 showTab("forside");
