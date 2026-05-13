@@ -3,44 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eksamen</title>  <!-- midlertidig tittel -->
+    <title>Eksamen</title>                                                                  <!-- midlertidig tittel -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <nav>
-        <div id="tabs">
-            <button class="tab active" data-tab="forside">Forside</button>
-            <button class="tab" data-tab="fakta">Fakta</button>
-            <button class="tab" data-tab="pavirkning">Påvirkning</button>
-            <button class="tab" data-tab="refleksjoner">Egne refleksjoner</button>
-        </div>
-    </nav>
-
-    <hr>
+    <header>
+        <nav>
+            <div id="tabs">
+                <button class="tab active" data-tab="forside">Forside</button>
+                <button class="tab" data-tab="fakta">Fakta</button>
+                <button class="tab" data-tab="pavirkning">Påvirkning</button>
+                <button class="tab" data-tab="refleksjoner">Egne refleksjoner</button>
+            </div>
+        </nav>
+        <hr />
+    </header>
 
     <main>
         <section id="forside" class="tab-content active">
+            <div class="text">
             <h1>Scarlets folkeopplysning</h1>
-            <p>Velkommen til min lille app! Sosiale medier er noe alle i dagens samfunn har et forhold til, spesielt norske ungdommer og unge voksne som meg selv.</p>
-            <p>Selv om sosiale medier er fantastiske digitale verktøy, som har revolusjonert måten man kommuniserer og deler sine erfaringer på, har det sine nedsider.</p>
-            <p>Jeg ønsker å kaste lys over flere aspekter av sosiale medier, og hensikten med denne appen er å bidra til dypere forståelse med statistikk, drøfting, og noen egne erfaringer jeg har i området.</p>
+                <p>Velkommen til min lille app! Sosiale medier er noe alle i dagens samfunn har et forhold til, spesielt norske ungdommer og unge voksne som meg selv</p>   <!-- innledende tekst -->
+                <p>Selv om sosiale medier er fantastiske digitale verktøy, som har revolusjonert måten man kommuniserer og deler sine erfaringer på, har det sine nedsider</p>
+                <p>Jeg ønsker å kaste lys over flere aspekter av sosiale medier, og hensikten med denne appen er å bidra til dypere forståelse med statistikk, drøfting, og noen egne erfaringer jeg har i området</p>
+            </div>
             <div id="fakta-bokser">
-                <div id="fakta-boks-1">
+                <div id="fakta-boks-1"> <!-- faktaboks 1-->
                     <h2>38%</h2>
                     <p>av norske ungdommer synes de bruker for mye tid på sosiale medier</p>
                 </div>
+
                 <div id="fakta-boks-2">
-                    <h2>28%</h2>
+                    <h2>28%</h2>        <!-- faktaboks 2 -->
                     <p>av norske ungdommer rapporterer selv at de ikke får nok søvn på grunn av sosiale medier</p>
                 </div>
+
                 <div id="fakta-boks-3">
-                    <h2>42%</h2>
+                    <h2>42%</h2>        <!-- faktaboks 3 -->
                     <p>av norske ungdommer ville følt seg utenfor om det ikke kunne ha brukt de samme sosiale mediene som vennene sine</p>
-                    <p>Kilde: Medietilsynet, Barn og medier 2026</p>
                 </div>
             </div>
+            <p class="text">Kilde: Medietilsynet, Barn og medier 2026</p>
 
         </section>
 
@@ -51,13 +55,46 @@
         </section>
 
         <section id="pavirkning" class="tab-content">
-            <h1>Påvirkning</h1>
+            <div class="text">
+                <h1>Påvirkning</h1>
+                    <p>Sosiale medier påvirker oss veldig i hverdagen. De bringer oss mennesker sammen, og lar oss uttrykke og kommunisere med hverandre på en veldig lettvint måte</p>
+                    <p>Et av problemene med at det er såpass enkelt er at det blir vanskelig for oss å la vær. Det er svært avhengighetsskapende, og om man ikke modererer sin bruk, vil man risikere å skape usunne vaner som kan få relativt alvorlige konsekvenser</p>
+
+                <h2>Positive sider</h2>
+                    <p>Det er stor forskjell på hva slags utbytte man får av sosiale medier basert på man "aktivt" bruker appene i motsetning til passiv "doomscrolling". Dette kommer jeg tilbake til i neste avsnitt kalt "Negative sider"</p>
+                    <p>Noe av det aller beste sosiale medier har å by på er kanskje det mest åpenbare, nemlig som en arena for å opprettholde vennskap og relasjoner. Man kan enkelt snakke med noen om man har det vanskelig, </p>
+                    <p>og følelsen av fellesskap og sosial støtte er kritisk, og kan gi stor positiv effekt på ens psykiske helse og velvære</p>
+                    <p></p>
+
+                <h2>Negative sider</h2>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+            </div>
         </section>
 
         <section id="refleksjoner" class="tab-content">
-            <h1>Egne refleksjoner</h1>
+            <div class="text">
+                <h1>Egne refleksjoner</h1>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
         </section>
     </main>
+
+    <section class="footer-section">
+        <hr />
+        <footer>
+            <div class="left">Scarlet Moen-Kristiansen</div>
+            <div class="center">Informasjonsteknologi 2 - vår 2026</div>
+            <div class="right">
+                <a href="https://www.ssb.no">Statistisk sentralbyrå</a>
+                <br />
+                <a href="https://www.medietilsynet.no">Medietilsynet</a>
+            </div>
+        </footer>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="main.js"></script>

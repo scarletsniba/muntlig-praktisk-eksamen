@@ -1,58 +1,128 @@
 .hidden {
     display: none;
-} * {
+}
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} body {
-    background-color: #FFFDF1;
-    color: #2C1810;
+}
+body {
+    background-color: #fffdf1;
+    color: #2c1810;
     font-family: "Segoe UI", sans-serif;
     line-height: 1.6;
     margin: 20px;
-} h1 {
+}
+h1 {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 1rem;
-} h2 {
+}
+h2 {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
-} p {
+}
+p {
     font-size: 1rem;
     margin-bottom: 1rem;
-} nav {
+}
+nav {
     display: flex;
     height: 90px;
     padding: 50px;
     align-items: center;
-} hr {
+}
+hr {
     border: none;
-    border-top: 2px solid #D4B5A0;
-    margin:  5px 35px;
-} button {
-    border: 2px solid #EE9B77;
-    background-color: #FFCE99;
+    border-top: 2px solid #d4b5a0;
+    margin: 5px 35px;
+}
+button {
+    border: 2px solid #ee9b77;
+    background-color: #ffce99;
     font-size: 2rem;
     padding: 10px;
     cursor: pointer;
     border-radius: 10px;
-} button:hover {
-    background-color: #F2B297;
-} button.active {
-    background-color: #D4745A;
-} #fakta-bokser {
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #f2b297;
+    transform: translateY(-6px);
+}
+button.active {
+    background-color: #d4745a;
+}
+
+.text {
+    padding: 0 50px;
+}
+#fakta-bokser {
     display: flex;
     flex-direction: row;
     gap: 16px;
-    padding: 20px;
+    padding: 20px 50px;
     border-radius: 20px;
-} #fakta-bokser > div {
-    background-color: #FFCE99;
-    padding: 20px;
+}
+#fakta-bokser > div {
+    border: 2px solid #ee9b77;
+    background-color: #ffce99;
+    padding: 20px 50px;
     border-radius: 10px;
     flex: 1;
-} #fakta-bokser p {
+    transition: 0.3s;
+}
+
+#fakta-bokser > div:hover {
+    background-color: #f2b297;
+    transform: translateY(-6px);
+}
+#fakta-bokser p {
     font-size: 1.2rem;
+    color: #5c3a28;
+}
+header {
+    background-color: #fffdf1;
+    display: block;
+    position: sticky;
+    top: 0;
+}
+footer {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer > div {
+    width: 250px;
+}
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+.footer-section {
+    background-color: #fffdf1;
+    display: block;
+    position: sticky;
+    bottom: 0;
+}
+#fakta {
+    padding: 20px 50px;
+}
+#tabs {
+    display: flex;
+    gap: 16px;
+    width: 75%;
+}
+a {
     color: #5C3A28;
+}
+a:hover {
+    color: #D4745A;
+}
+a:visited {
+    color: #EE9B77;
 }

@@ -68,7 +68,7 @@ fetch("figur-1-gjennomsnittlig.csv")
                     data: screenTimeData.map(s => s.value)
                 }]
             }
-        });;
+        });
 
     });
 
