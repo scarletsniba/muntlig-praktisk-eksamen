@@ -119,10 +119,14 @@ footer > div {
 }
 a {
     color: #5C3A28;
+    text-decoration: none;
 }
 a:hover {
     color: #D4745A;
 }
 a:visited {
     color: #EE9B77;
+} #fakta canvas {
+    max-height: 400px;
+    margin-bottom: 40px;
 }
